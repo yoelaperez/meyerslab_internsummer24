@@ -1,18 +1,24 @@
-Abstract:
-Introduction
+ABSTRACT:
+
+Introduction:
+
 The aim of this project is to investigate the cost and benefit of influenza antivirals using disease and health economic models. The objectives are to:
 a. Adapt from a cohort study comparing Oseltamivir to Baloxavir
 b. Modify our existing antiviral model for household prophylaxis and treatment.
 c. Investigate the cost-effectiveness and budget impact analysis: Using (i) basic statistical analysis and (ii) constructing decision trees, transition probabilities, and sensitivity analyses.
 d* Cost and Effect Data for two-set of patients: effect data, cost
 
-Methodology
+Methodology:
+
 Based on this study, we want to find out if using baloxavir leads to fewer doctor's visits, hospital stays, and overall healthcare expenses related to complications from the influenza after treatment, compared to oseltamivir.
 
 Summer Internship Summary: (from Yoel Perez-Perez)
+
 Over the past 11 weeks, I have been broadly introduced to infectious disease modeling in the context of health economics research. Despite a slow early start because of on-boarding protocols, the first couple of weeks were devoted to my familiarization with vocabulary and concepts, mainly through reading an article on the economic value of COVID-19 vaccines. In the immediate weeks that followed, I learned to summarize my understanding through creating and presenting slideshows, shared with my mentor but accessible to a non-technical audience. While I also learned the basic ideas of compartmental epidemiology models, I programmed my first simulations in Python, using my pre-existing knowledge of numpy, scipy, pandas, and matplotlib. Soon, I was tasked with identifying and narrowing our source of publications for a project on the cost-effectiveness of Influenza antivirals. My assigned readings focused on Oseltamivir Phosphate and Baloxavir Marboxil, and because my mentor encouraged exploration, I quickly became exposed to the world of clinical trials and FDA documentation. Cost-effectiveness analysis is a dense subfield of health economics, which required me to read brief excerpts from a textbook to better grasp the critical metrics and formulas. Our project question was as follows: if Baloxavir Marboxil is an antiviral that requires fewer doses than Oseltamivir Phosphate to reduce the illness and transmissibility caused by Influenza, could it be more cost-effective to employ in an epidemic setting despite its higher cost per dose? The presumptive hypothesis was that Baloxavir is more cost-effective than Oseltamivir. To test this idea, I was tasked with writing programs that processed clinical Influenza data from patients taking either antiviral (as well as a control of no treatment), computed economic metrics for cost-effectiveness, and then visualized the economic value of the treatments relative to each other and a control. Because of its versatility for statistical analysis of data, modeling, and visualization, I learned the basics of the R language and employed it for the remainder of the project. Most data used was in .csv file format, obtained from academic publications and government sources. Over several weeks of Zoom meetings and technical guidance from my mentor, I produced four iterations of R programs, resulting in a total of around 6 separate code scripts, each with a few hundred lines. This required me to keep a detailed commenting system in place while also translating my programming into scientific protocols. Our work soon intersected with the world of health policy in the United States, as some of our methodology drew from COVID-19 evaluations and real CDC-documented Influenza seasons in the United States prior to the COVID-19 pandemic. After generating over 18 almost publishable graphs and tables, my programming and interpretation of the inputted clinical data ultimately suggested that after 30 days of patient observation, Oseltamivir may be most cost-effective, contrary to our original hypothesis. Although our summer research has come to an end, I would have liked to more rigorously test my results and our hypothesis through probabilistic analysis and other statistical methods, as well as eventually incorporating recent local clinical data from Austin Influenza patients. Once tested, such work could be combined with a compartmental model to form a more realistic simulation of Influenza antiviral health economics, deployable for future seasons or outbreaks because of its foundation in real clinical data. I hope to publish my programs on GitHub and share my experience soon while potentially attending infectious disease modeling conferences in the fall. This summer, I have learned to teach myself technical concepts by reading academic literature and discussing methodology alongside results. I have also grown in my skill set for scientific inquiry, expanded my arsenal as a programmer, and matured in my ability to use and interpret real-world datasets. I remain deeply grateful to Oluwasegun for his mentorship and equally in awe of the opportunities offered by the Meyers Lab.
 
-Method in Clinical Study: Patients who got a prescription for either baloxavir or oseltamivir within 48 hours after visiting a doctor for the influenza during the 2018-2019 influenza season were studied. They used a database to find these patients and made sure the groups were similar by matching two people who took oseltamivir with one person who took baloxavir. They then checked on these patients 15 and 30 days after they started the antiviral treatment to see how much healthcare they needed and how much it cost, focusing on any cause, any breathing-related issues, and specific conditions like the influenza, asthma, COPD, or infections. 
+Method in Clinical Study: 
+
+Patients who got a prescription for either baloxavir or oseltamivir within 48 hours after visiting a doctor for the influenza during the 2018-2019 influenza season were studied. They used a database to find these patients and made sure the groups were similar by matching two people who took oseltamivir with one person who took baloxavir. They then checked on these patients 15 and 30 days after they started the antiviral treatment to see how much healthcare they needed and how much it cost, focusing on any cause, any breathing-related issues, and specific conditions like the influenza, asthma, COPD, or infections. 
 
 Method in Modeling Study: 
 
@@ -65,7 +71,8 @@ The above determination is executed with a loop algorithm that also outputs the 
 A Cost-Effectiveness Acceptability Curve (CEAC), plotting the percent of points that are cost-effective at each of the given WTP values.
 A scatter plot visualizing how total cost varies against the total HCRU (“simdataset$total_events”), separated by Treatment (A and B).
 
-References
+REFERENCES:
+
 Du, Z., Nugent, C., Galvani, A. P., Krug, R. M., & Meyers, L. A. (2020). Modeling mitigation of influenza epidemics by baloxavir. Nature communications, 11(1), 2750. https://doi.org/10.1038/s41467-020-16585-y
 
 Nagase, H., Moriwaki, K., Kamae, M., Yanagisawa, S., & Kamae, I. (2009). Cost-effectiveness analysis of oseltamivir for influenza treatment considering the virus emerging resistant to the drug in Japan. Value in health : the journal of the International Society for Pharmacoeconomics and Outcomes Research, 12 Suppl 3, S62–S65. https://doi.org/10.1111/j.1524-4733.2009.00629.x
